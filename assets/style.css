@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: Consolas, Courier, Monaco, "Courier New", monospace;
+  color: #dcf763;
+  font-size: 13pt; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #fff; }
+
+input {
+  border: none; }
+
+.hidden {
+  visibility: hidden; }
+
+.blinking {
+  animation: blink 0.3s infinite alternate; }
+
+.bold {
+  font-weight: bold; }
+
+@keyframes blink {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0.3; } }
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px; }
+
+#content {
+  margin: 0 30px;
+  padding: 30px 0 350px; }
+  #content * {
+    color: #048ba8; }
+  #content section {
+    display: none; }
+    #content section h2 {
+      margin-top: 40px; }
+    #content section p {
+      margin: 0; }
+    #content section hr {
+      border: none;
+      margin-top: 30px; }
+      #content section hr:before {
+        content: "========== ========== ========== ========== ========== ========== ========== ========== ========== =========="; }
+    #content section dl dt {
+      float: left; }
+    #content section dl dd {
+      margin-left: 200px;
+      margin-bottom: 20px; }
+    #content section table tbody tr {
+      cursor: pointer;
+      opacity: 0.6;
+      transition: 0.05s; }
+      #content section table tbody tr:hover {
+        opacity: 1; }
+    #content section table th {
+      text-align: left;
+      margin: 0; }
+    #content section table td {
+      margin: 0; }
+      #content section table td:before {
+        content: "| "; }
+      #content section table td.rate {
+        position: relative; }
+        #content section table td.rate span {
+          display: block;
+          position: absolute;
+          top: 2px;
+          left: 13pt;
+          overflow-x: hidden; }
+          #content section table td.rate span.star-empty {
+            opacity: 0.5; }
+
+#console {
+  position: fixed;
+  bottom: 30px;
+  width: 1200px;
+  height: 250px;
+  overflow: scroll;
+  border-radius: 4px;
+  background-color: #435058; }
+
+#histories {
+  margin: 20px 30px;
+  margin-bottom: 3px; }
+  #histories .history {
+    margin: 3px 0; }
+    #histories .history:before {
+      content: "sicanic $ "; }
+  #histories .result:before {
+    content: ""; }
+
+#prompt {
+  margin: 3px 30px; }
+  #prompt:before {
+    content: "sicanic $ "; }
+  #prompt input {
+    background-color: #435058;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    outline: none; }
+
+/*# sourceMappingURL=style.css.map */
