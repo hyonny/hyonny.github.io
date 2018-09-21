@@ -62,6 +62,8 @@ input {
     #content section table th {
       text-align: left;
       margin: 0; }
+      #content section table th:before {
+        content: "| "; }
     #content section table td {
       margin: 0; }
       #content section table td:before {
